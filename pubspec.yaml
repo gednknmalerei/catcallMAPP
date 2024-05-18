@@ -1,0 +1,275 @@
+name: cat_call_app
+description: "A catcalling app for Bremen (Germany)."
+publish_to: 'none'
+
+version: 1.0.0+1
+
+environment:
+  sdk: '>=3.2.5 <4.0.0'
+
+dependencies:
+  flutter:
+    sdk: flutter
+  cupertino_icons: ^1.0.6
+  geofence_service: ^5.0.0
+  flutter_local_notifications: ^16.3.2
+  google_maps_flutter: ^2.6.0
+  intl: ^0.19.0
+  csv: ^5.1.1
+  shared_preferences: ^2.2.2
+  permission_handler: ^11.3.0
+  flutter_native_splash: ^2.3.10
+  url_launcher: ^6.2.5
+  custom_info_window: ^1.0.1
+  path_provider: ^2.1.3
+  share_plus: ^9.0.0
+  file_picker: ^8.0.3
+
+dev_dependencies:
+  flutter_launcher_icons: "^0.13.1"
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^2.0.0
+
+flutter_launcher_icons:
+  android: true
+  ios: true
+  image_path_ios: "assets/cat_call_icon.png"
+  image_path_android: "assets/cat_call_icon_android.png"
+  adaptive_icon_background: "assets/cat_call_icon_android.png"
+  adaptive_icon_foreground: "assets/cat_call_icon_android.png"
+
+flutter_native_splash:
+  color: "#3b2042"
+  image: "assets/app_icon.png"
+  android_gravity: fill
+  android_12:
+    image: "assets/app_icon.png"
+    color: "#3b2042"
+
+flutter:
+  fonts:
+    - family: NotoSans
+      fonts:
+        - asset: assets/NotoSans-Regular.ttf
+          weight: 400
+        - asset: assets/NotoSans-Medium.ttf
+          weight: 500
+        - asset: assets/NotoSans-SemiBold.ttf
+          weight: 600
+
+  uses-material-design: true
+
+  assets:
+    - assets/listview.png
+    - assets/listview-thick.png
+    - assets/map.png
+    - assets/map-stroke.png
+    - assets/maps-styling.json
+    - assets/marker-blue.png
+    - assets/marker-blue-group.png
+    - assets/marker-green.png
+    - assets/marker-grey.png
+    - assets/marker-grey-group.png
+    - assets/marker-grey-opacity.png
+    - assets/marker-yellow.png
+    - assets/marker-yellow-group.png
+    - assets/marker-purple.png
+    - assets/arrow-back.png
+    - assets/catcall_data.csv
+    - assets/american_flag.png
+    - assets/german_flag.png
+    - assets/lauf.png
+    - assets/sprechblase.png
+    - assets/glocke.png
+    - assets/finger.png
+    - assets/discoball.png
+    - assets/arrow-right.png
+    - assets/arrow-left.png
+    - assets/topBar.png
+    - assets/menu.png
+    - assets/instagram.png
+    - assets/list_screen.jpg
+    - assets/map_screen.jpg
+    - assets/list_screen_eng.jpg
+    - assets/map_screen_eng.jpg
+    - assets/catcall_images/1.jpg
+    - assets/catcall_images/2.jpg
+    - assets/catcall_images/3.jpg
+    - assets/catcall_images/4.jpg
+    - assets/catcall_images/5.jpg
+    - assets/catcall_images/6.jpg
+    - assets/catcall_images/7.jpg
+    - assets/catcall_images/8.jpg
+    - assets/catcall_images/9.jpg
+    - assets/catcall_images/10.jpg
+    - assets/catcall_images/11.jpg
+    - assets/catcall_images/12.jpg
+    - assets/catcall_images/13.jpg
+    - assets/catcall_images/14.jpg
+    - assets/catcall_images/15.jpg
+    - assets/catcall_images/16.jpg
+    - assets/catcall_images/17.jpg
+    - assets/catcall_images/18.jpg
+    - assets/catcall_images/19.jpg
+    - assets/catcall_images/20.jpg
+    - assets/catcall_images/21.jpg
+    - assets/catcall_images/22.jpg
+    - assets/catcall_images/23.jpg
+    - assets/catcall_images/24.jpg
+    - assets/catcall_images/25.jpg
+    - assets/catcall_images/26.jpg
+    - assets/catcall_images/27.jpg
+    - assets/catcall_images/28.jpg
+    - assets/catcall_images/29.jpg
+    - assets/catcall_images/30.jpg
+    - assets/catcall_images/31.jpg
+    - assets/catcall_images/32.jpg
+    - assets/catcall_images/33.jpg
+    - assets/catcall_images/34.jpg
+    - assets/catcall_images/35.jpg
+    - assets/catcall_images/36.jpg
+    - assets/catcall_images/37.jpg
+    - assets/catcall_images/38.jpg
+    - assets/catcall_images/39.jpg
+    - assets/catcall_images/40.jpg
+    - assets/catcall_images/41.jpg
+    - assets/catcall_images/42.jpg
+    - assets/catcall_images/43.jpg
+    - assets/catcall_images/44.jpg
+    - assets/catcall_images/45.jpg
+    - assets/catcall_images/46.jpg
+    - assets/catcall_images/47.jpg
+    - assets/catcall_images/48.jpg
+    - assets/catcall_images/49.jpg
+    - assets/catcall_images/50.jpg
+    - assets/catcall_images/51.jpg
+    - assets/catcall_images/52.jpg
+    - assets/catcall_images/53.jpg
+    - assets/catcall_images/54.jpg
+    - assets/catcall_images/55.jpg
+    - assets/catcall_images/56.jpg
+    - assets/catcall_images/57.jpg
+    - assets/catcall_images/58.jpg
+    - assets/catcall_images/59.jpg
+    - assets/catcall_images/60.jpg
+    - assets/catcall_images/61.jpg
+    - assets/catcall_images/62.jpg
+    - assets/catcall_images/63.jpg
+    - assets/catcall_images/64.jpg
+    - assets/catcall_images/65.jpg
+    - assets/catcall_images/66.jpg
+    - assets/catcall_images/67.jpg
+    - assets/catcall_images/68.jpg
+    - assets/catcall_images/69.jpg
+    - assets/catcall_images/70.jpg
+    - assets/catcall_images/71.jpg
+    - assets/catcall_images/72.jpg
+    - assets/catcall_images/73.jpg
+    - assets/catcall_images/74.jpg
+    - assets/catcall_images/75.jpg
+    - assets/catcall_images/76.jpg
+    - assets/catcall_images/77.jpg
+    - assets/catcall_images/78.jpg
+    - assets/catcall_images/79.jpg
+    - assets/catcall_images/80.jpg
+    - assets/catcall_images/81.jpg
+    - assets/catcall_images/82.jpg
+    - assets/catcall_images/83.jpg
+    - assets/catcall_images/84.jpg
+    - assets/catcall_images/85.jpg
+    - assets/catcall_images/86.jpg
+    - assets/catcall_images/87.jpg
+    - assets/catcall_images/88.jpg
+    - assets/catcall_images/89.jpg
+    - assets/catcall_images/90.jpg
+    - assets/catcall_images/91.jpg
+    - assets/catcall_images/92.jpg
+    - assets/catcall_images/93.jpg
+    - assets/catcall_images/94.jpg
+    - assets/catcall_images/95.jpg
+    - assets/catcall_images/96.jpg
+    - assets/catcall_images/97.jpg
+    - assets/catcall_images/98.jpg
+    - assets/catcall_images/99.jpg
+    - assets/catcall_images/100.jpg
+    - assets/catcall_images/101.jpg
+    - assets/catcall_images/102.jpg
+    - assets/catcall_images/103.jpg
+    - assets/catcall_images/104.jpg
+    - assets/catcall_images/105.jpg
+    - assets/catcall_images/106.jpg
+    - assets/catcall_images/107.jpg
+    - assets/catcall_images/108.jpg
+    - assets/catcall_images/109.jpg
+    - assets/catcall_images/110.jpg
+    - assets/catcall_images/111.jpg
+    - assets/catcall_images/112.jpg
+    - assets/catcall_images/113.jpg
+    - assets/catcall_images/114.jpg
+    - assets/catcall_images/115.jpg
+    - assets/catcall_images/116.jpg
+    - assets/catcall_images/117.jpg
+    - assets/catcall_images/118.jpg
+    - assets/catcall_images/119.jpg
+    - assets/catcall_images/120.jpg
+    - assets/catcall_images/121.jpg
+    - assets/catcall_images/122.jpg
+    - assets/catcall_images/123.jpg
+    - assets/catcall_images/124.jpg
+    - assets/catcall_images/125.jpg
+    - assets/catcall_images/126.jpg
+    - assets/catcall_images/127.jpg
+    - assets/catcall_images/128.jpg
+    - assets/catcall_images/129.jpg
+    - assets/catcall_images/130.jpg
+    - assets/catcall_images/131.jpg
+    - assets/catcall_images/132.jpg
+    - assets/catcall_images/133.jpg
+    - assets/catcall_images/134.jpg
+    - assets/catcall_images/135.jpg
+    - assets/catcall_images/136.jpg
+    - assets/catcall_images/137.jpg
+    - assets/catcall_images/138.jpg
+    - assets/catcall_images/139.jpg
+    - assets/catcall_images/140.jpg
+    - assets/catcall_images/141.jpg
+    - assets/catcall_images/142.jpg
+    - assets/catcall_images/143.jpg
+    - assets/catcall_images/144.jpg
+    - assets/catcall_images/145.jpg
+    - assets/catcall_images/146.jpg
+    - assets/catcall_images/147.jpg
+    - assets/catcall_images/148.jpg
+    - assets/catcall_images/149.jpg
+    - assets/catcall_images/150.jpg
+    - assets/catcall_images/151.jpg
+    - assets/catcall_images/152.jpg
+    - assets/catcall_images/153.jpg
+    - assets/catcall_images/154.jpg
+    - assets/catcall_images/155.jpg
+    - assets/catcall_images/156.jpg
+    - assets/catcall_images/157.jpg
+    - assets/catcall_images/158.jpg
+    - assets/catcall_images/159.jpg
+    - assets/catcall_images/160.jpg
+    - assets/catcall_images/161.jpg
+    - assets/catcall_images/162.jpg
+    - assets/catcall_images/163.jpg
+    - assets/catcall_images/164.jpg
+    - assets/catcall_images/165.jpg
+    - assets/catcall_images/166.jpg
+    - assets/catcall_images/167.jpg
+    - assets/catcall_images/168.jpg
+    - assets/catcall_images/169.jpg
+    - assets/catcall_images/170.jpg
+    - assets/catcall_images/171.jpg
+    - assets/catcall_images/172.jpg
+    - assets/catcall_images/173.jpg
+    - assets/catcall_images/174.jpg
+    - assets/catcall_images/175.jpg
+    - assets/catcall_images/176.jpg
+    - assets/catcall_images/177.jpg
+    - assets/catcall_images/178.jpg
+    - assets/catcall_images/179.jpg
+    - assets/catcall_images/180.jpg
